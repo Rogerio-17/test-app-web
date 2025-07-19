@@ -81,9 +81,6 @@ src/
 ├── types/              # Definições de tipos globais
 │   └── product.ts      # Interface do modelo Product
 │
-├── utils/              # Funções utilitárias
-│   └── productUtils.ts # Utilitários para manipulação de produtos
-│
 ├── lib/                # Configurações e bibliotecas
 │   └── utils.ts        # Utilitários gerais (cn, etc.)
 │
