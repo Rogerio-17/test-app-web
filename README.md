@@ -110,16 +110,6 @@ src/
 - **ESLint** - Linter para identificar problemas no código
 - **TypeScript** - Tipagem estática para maior segurança
 
-## 🎨 Design e Interface
-
-O projeto segue uma filosofia de design clean e minimalista:
-
-- **Paleta de cores**: Tons neutros com fundo branco predominante
-- **Acentos coloridos**: Azul, verde e roxo para botões e elementos interativos
-- **Tipografia**: Hierarquia clara com diferentes pesos de fonte
-- **Espaçamento**: Generoso uso de whitespace para melhor legibilidade
-- **Responsividade**: Layout adaptativo para desktop, tablet e mobile
-
 ## 🔗 Integração com API
 
 A aplicação consome uma API REST que deve estar rodando em `http://localhost:3333` com os seguintes endpoints:
@@ -130,29 +120,9 @@ A aplicação consome uma API REST que deve estar rodando em `http://localhost:3
 - `DELETE /products/:id` - Remove um produto
 - `GET /products/:id` - Busca um produto específico
 
-### Modelo de Dados
-
-```typescript
-interface Product {
-  id: string
-  name: string
-  price: number
-  sku: string
-  description: string
-  firstMissingLetter: string
-  createdAt: Date
-  updatedAt?: Date | null
-}
-```
-
 ## 📱 Funcionalidades Principais
 
 ### Listagem de Produtos
 - Grid responsivo com cards elegantes
 - Exibição de nome, descrição e primeira letra
 - Layout adaptativo para diferentes tamanhos de tela
-
-### Gerenciamento de Produtos
-- **Criar**: Modal com formulário validado
-- **Editar**: Modal pré-preenchido com dados atuais
-- **Excluir**: Confirmação antes da remoção
