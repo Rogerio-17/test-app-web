@@ -24,8 +24,8 @@ Este é um sistema de listagem e gerenciamento de produtos que permite:
 
 1. **Clone o repositório**:
 ```bash
-git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-cd SEU_REPOSITORIO
+git clone https://github.com/Rogerio-17/test-app-web.git
+cd test-app-web
 ```
 
 2. **Instale as dependências**:
