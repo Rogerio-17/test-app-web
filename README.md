@@ -1,6 +1,6 @@
 # 🛍️ Sistema de Gerenciamento de Produtos
 
-Um sistema moderno e responsivo para gerenciamento de produtos, desenvolvido com React, TypeScript e uma interface elegante utilizando tons claros e minimalistas.
+Um sistema para gerenciamento de produtos, desenvolvido com React e TypeScript 
 
 ## 📋 Sobre o Projeto
 
