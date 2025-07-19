@@ -39,7 +39,7 @@ interface ButtonEditProductProps {
 }
 
 export function ButtonEditProduct({ productId }: ButtonEditProductProps) {
-  const { mutateAsync: editProduct } = useEditProductForm();
+  const { mutateAsync: editProduct } = useEditProductForm(productId);
   const { data: productDetails } = useGetProductByIdForm({ productId })
   const [isOpen, setIsOpen] = useState(false);
 
@@ -55,7 +55,6 @@ export function ButtonEditProduct({ productId }: ButtonEditProductProps) {
 
   function onSubmit({ name, description, price, sku }: EditProductsFromProps) {
     editProduct({
-      productId,
       name,
       description,
       price: Number(price),

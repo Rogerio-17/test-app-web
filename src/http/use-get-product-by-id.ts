@@ -5,7 +5,7 @@ import type { GetProductByIdResponse } from './types/get-product-by-id-response'
 export function useGetProductByIdForm({ productId }: GetProductByIdRequest) {
 
    return useQuery({
-    queryKey: ['get-products', productId],
+    queryKey: ['get-product', productId],
     queryFn: async () => {
       const response = await fetch(`http://localhost:3333/products/${productId}`)
       const result: GetProductByIdResponse = await response.json()
@@ -13,4 +13,5 @@ export function useGetProductByIdForm({ productId }: GetProductByIdRequest) {
       return result
     },
   })
+  
 }
