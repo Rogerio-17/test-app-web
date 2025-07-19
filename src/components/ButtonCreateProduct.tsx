@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -23,7 +21,6 @@ import {
 import { Input } from "./ui/input";
 import { useCreateProductForm } from "@/http/use-create-product";
 import { useState } from "react";
-import { toast } from "react-toastify";
 
 const formSchema = z.object({
   name: z.string().min(1, { message: "Campo é obrigatório" }),
@@ -35,7 +32,7 @@ const formSchema = z.object({
 type CreateProductsFromProps = z.infer<typeof formSchema>;
 
 export function ButtonCreateProduct() {
-  const { mutateAsync: createProduct, error } = useCreateProductForm();
+  const { mutateAsync: createProduct } = useCreateProductForm();
   const [isOpen, setIsOpen] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
