@@ -1,6 +1,6 @@
 import type { Product } from "@/types/product";
 import { Button } from "./ui/button";
-import { Pencil, Trash } from "lucide-react";
+import { Trash } from "lucide-react";
 import { useDeleteProductForm } from "@/http/use-delete-product";
 import { ButtonEditProduct } from "./ButtonEditProduct";
 

@@ -1,4 +1,4 @@
-import { Search, Plus } from "lucide-react";
+import { Search } from "lucide-react";
 import { ProductCard } from "../components/ProductCard";
 import { useProducts } from "@/http/use-products";
 import { ButtonCreateProduct } from "@/components/ButtonCreateProduct";
